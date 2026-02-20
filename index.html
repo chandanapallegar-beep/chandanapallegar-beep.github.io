@@ -4,6 +4,18 @@
     <title>Chandana | AI Developer</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<script>
+const text = "AI Developer | Data Enthusiast | Problem Solver";
+let i = 0;
+function typeEffect() {
+    if (i < text.length) {
+        document.getElementById("typing-text").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeEffect, 60);
+    }
+}
+window.onload = typeEffect;
+</script>
 <body>
 
     <nav>
@@ -17,7 +29,7 @@
 
     <header>
         <h1>Chandana Pallegar</h1>
-        <p>AI Developer | Data Enthusiast | Problem Solver</p>
+        <p id="typing-text"></p>
         <div class="hero-buttons">
     <a href="https://github.com/chandanapallegar-beep" target="_blank" class="btn-primary">GitHub</a>
     <a href="#" class="btn-secondary">Download Resume</a>
