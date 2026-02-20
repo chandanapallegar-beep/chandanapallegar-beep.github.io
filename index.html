@@ -1,85 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Chandana | AI Developer</title>
+    <title>Chandana Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<script>
-const text = "AI Developer | Data Enthusiast | Problem Solver";
-let i = 0;
-function typeEffect() {
-    if (i < text.length) {
-        document.getElementById("typing-text").innerHTML += text.charAt(i);
-        i++;
-        setTimeout(typeEffect, 60);
-    }
-}
-window.onload = typeEffect;
-</script>
+
 <body>
 
+    <!-- Navigation -->
     <nav>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
+    <!-- Hero Section -->
     <header>
-        <h1>Chandana Pallegar</h1>
-        <p id="typing-text"></p>
+        <h1>Chandana Pallegar 🚀</h1>
+        <p>AI Developer | Data Enthusiast | Problem Solver</p>
+
         <div class="hero-buttons">
-    <a href="https://chandanapallegar-beep.github.io/resume.pdf" 
-       download 
-       class="btn-resume">
-       Download Resume
-    </a>
-</div>
-</div>
-        <div class="hero-buttons">
-    <a href="https://github.com/chandanapallegar-beep" target="_blank" class="btn-primary">GitHub</a>
-    <a href="#" class="btn-secondary">Download Resume</a>
-</div>
+            <a href="https://github.com/chandanapallegar-beep" target="_blank" class="btn-github">
+                GitHub
+            </a>
+
+            <!-- PINK BUTTON (WORKING DOWNLOAD) -->
+            <a href="resume.pdf" download class="btn-resume">
+                Download Resume
+            </a>
+        </div>
     </header>
 
+    <!-- About -->
     <section id="about">
         <h2>About Me</h2>
         <p>I am passionate about Artificial Intelligence, Data Analytics and building intelligent systems that solve real-world problems.</p>
     </section>
 
+    <!-- Skills -->
     <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-container">
-        <div class="skill-card">Python</div>
-        <div class="skill-card">SQL</div>
-        <div class="skill-card">Git & GitHub</div>
-        <div class="skill-card">Machine Learning</div>
-    </div>
-</section>
+        <h2>Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Git & GitHub</li>
+            <li>Machine Learning</li>
+        </ul>
+    </section>
 
+    <!-- Projects -->
     <section id="projects">
-    <h2>Projects</h2>
+        <h2>Projects</h2>
+        <p>NL-to-SQL System using LLMs</p>
+    </section>
 
-    <div class="projects-container">
-        <div class="project-card">
-            <h3>NL-to-SQL System using LLMs</h3>
-            <p>Built an intelligent system that converts natural language queries into optimized SQL using LLMs and DuckDB.</p>
-            <a href="https://github.com/chandanapallegar-beep" target="_blank">View on GitHub</a>
-        </div>
-    </div>
-</section>
-
+    <!-- Contact -->
     <section id="contact">
-    <h2>Contact</h2>
-    <div class="contact-container">
-        <a href="mailto:your-email@gmail.com" class="contact-card">📧 Email</a>
-        <a href="https://linkedin.com" target="_blank" class="contact-card">💼 LinkedIn</a>
-        <a href="https://github.com/chandanapallegar-beep" target="_blank" class="contact-card">💻 GitHub</a>
-    </div>
-</section>
+        <h2>Contact</h2>
+        <p>Email: chandana@email.com</p>
+        <p>LinkedIn: linkedin.com/in/chandana</p>
+    </section>
 
+    <!-- Footer -->
     <footer>
         <p>© 2026 Chandana Pallegar</p>
     </footer>
